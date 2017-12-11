@@ -13,7 +13,7 @@ work. If not, see <http://creativecommons.org/licenses/by-nc-sa/4.0/>.
 
 # Exercícios de Introdução à Computação
 
-Este repositório contem uma série de exercícios da disciplina de Introdução à
+Este repositório contém uma série de exercícios da disciplina de Introdução à
 Computação da [Licenciatura em Aplicações Multimédia e Videojogos][lamv] da
 [Universidade Lusófona de Humanidades e Tecnologias][ULHT] em Lisboa.
 
@@ -34,17 +34,112 @@ secção [Colaboração](#colab).
 8. [Fluxogramas](problemas/08_fluxogramas.md)
 9. [Markdown](problemas/09_markdown.md)
 10. [Git](problemas/10_git.md)
-11. ...
-12. ...
-13. ...
-14. ...
-15. ...
+11. [Arrays e apontadores](problemas/11_arrays.md)
+12. [Strings](problemas/12_strings.md)
+13. [Ficheiros](problemas/13_ficheiros.md)
+<!--
+14. [Estruturas e definição de tipos](problemas/14_structs.md)
+15. [Organização de um programa](problemas/15_org.md)
+16. [Documentação com Doxygen](problemas/16_doxy.md)
+17. [Gestão dinâmica da memória](problemas/17_mem.md)
+18. [Estruturas de dados](problemas/18_aed.md)
+19. [Bibliotecas externas: G2](problemas/19_bibg2.md)
+-->
 
 <a name="colab" />
 
 ## Colaboração
 
-Em breve.
+Os alunos podem contribuir com soluções para os exercícios propostos, podendo
+inclusive propor novos exercícios. Os seguintes passos descrevem uma forma
+relativamente simples de contribuir para este repositório.
+
+### Que ficheiros alterar?
+
+Os exercícios estão na pasta [problemas](problemas). Cada ficheiro Markdown
+corresponde aos exercícios de uma parte da matéria. Se o aluno adicionar um
+exercício, deve seguir a numeração e formatação dos exercícios anteriores. Pode
+opcionalmente adicionar a autoria do exercício através de um _link_ à sua
+página do GitHub.
+
+As soluções estão na pasta [solucoes](solucoes). Por sua vez, cada sub-pasta
+contém uma série de ficheiros Markdown com as soluções dos exercícios de
+determinada parte da matéria. Cada ficheiro corresponde a uma ou mais soluções
+de apenas um dos exercícios. Se o aluno apresentar uma nova solução, pode
+opcionalmente assinar a autoria da mesma através de um _link_ à sua página do
+GitHub.
+
+Em qualquer dos casos, o aluno pode também adicionar o seu nome/_link_ a
+página do GitHub na secção Colaboradores desta página, mais abaixo.
+
+São ainda aceites _pull requests_ com correções a esta página, às licenças, e
+por ai fora.
+
+### Obter/atualizar repositório local
+
+#### Primeira colaboração
+
+1. Cria uma cópia (*fork*) deste repositório (tipicamente denominado
+_upstream_) na tua conta do GitHub (botão **Fork** no canto superior direito).
+A cópia do repositório na tua conta é geralmente chamada _origin_.
+2. Obtém uma cópia local (no teu PC) do repositório _origin_ com o comando
+`git clone https://github.com/OTeuUserName/ic_exercicios.git` (substituir
+`OTeuUserName` pelo teu nome de utilizador no GitHub).
+3. Dar conhecimento ao teu repositório local da existência do repositório
+remoto _upstream_ com o comando
+`git remote add upstream https://github.com/VideojogosLusofona/ic_exercicios.git`.
+
+<a name="colabseg" />
+
+#### Colaborações seguintes
+
+1. No teu repositório local, certifica-te que estás no ramo _master_:
+    - `$ git checkout master`
+2. Descarrega as novidades do repositório _upstream_ e junta-as (_merge_) ao
+teu ramo _master_:
+    - `$ git fetch upstream`
+    - `$ git merge upstream/master`
+3. Carrega (_push_) as novidades do _upstream_ para o repositório _origin_:
+    - `$ git push origin master`
+
+### Efetuar alterações e solicitar integração
+
+1. Dentro da pasta dos exercícios, chamada *ic_exercicios*, cria um ramo
+(_branch_) para inserires as tuas novas propostas:
+    - `$ git branch meu_ramo`
+    - `$ git checkout meu_ramo`
+    - O nome `meu_ramo` pode ser substituído por qualquer outro nome.
+    - O primeiro comando cria o ramo, o segundo comando muda o git para esse
+      ramo. Os dois comandos podem ser compactados num só:
+      `$ git checkout -b meu_ramo`.
+2. Uma vez no novo ramo, faz as alterações/propostas às soluções e/ou aos
+exercícios. Cada alteração/proposta deve ser especificada com pelo menos um
+_commit_:
+    - `$ git add nome_dos_ficheiros_alterados`
+    - `$ git commit -m "Descrição das alterações efetuadas"`
+3. O `novo_ramo` deve ser carregado (_pushed_) para o repositório _origin_ (ou
+seja, para o *fork* que criaste no GitHub):
+    - `$ git push -u origin meu_ramo`
+    - A opção `-u` é necessária pois nesta fase o teu repositório no GitHub
+      (_origin_) ainda não conhece o ramo chamado `meu_ramo`.
+4. Uma vez confirmado que o _push_ foi realizado com sucesso, deve ser
+solicitado um *pull request* (pedido de integração) na árvore original dos
+exercícios (_upstream_). Para o efeito basta clicar no botão
+**New pull request** e solicitar a seguinte integração:
+    - _Base fork_ **VideojogosLusofona/ic_exercicios**, _base_ **master**
+    (local onde queres integrar as tuas alterações).
+    - _Head fork_ **OTeuUserName/ic_exercicios**, _compare_ **meu_ramo** (as
+    tuas alterações que queres ver integradas).
+    - Clica no botão verde **Create pull request**, e deixa uma pequena
+    descrição da razão do pedido de integração, clicando depois novamente em
+    **Create pull request**.
+5. Caso o _pull request_ não tenha sido aceite, volta ao ponto 2.
+6. Caso o _pull request_ tenha sido aceite, podes seguir os passos indicados
+em [Colaborações seguintes](#colabseg), de modo a juntares as alterações que
+propuseste ao teu ramo `master`. Posteriormente podes eliminar o `meu_ramo`
+localmente e remotamente (_origin_) com os seguintes comandos:
+    - `$ git branch -d meu_ramo`
+    - `$ git push origin :meu_ramo`
 
 ## Licenças
 
@@ -54,8 +149,8 @@ O código associado aos exercícios é disponibilizado através da licença [GPL
 ## Metadados
 
 * Autor: [Nuno Fachada]
-* Colaboradores: [Tiago Ferreira Alves](https://github.com/synpse)
-
+* Colaboradores: [Tiago Ferreira Alves](https://github.com/synpse),
+  [Rui Martins](https://github.com/rui-martins)
 * Curso: [Licenciatura em Aplicações Multimédia e Videojogos][lamv]
 * Instituição: [Universidade Lusófona de Humanidades e Tecnologias][ULHT]
 

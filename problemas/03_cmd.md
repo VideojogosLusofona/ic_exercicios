@@ -108,3 +108,24 @@ presente na pasta atual?
 execução no teu PC?
 
 > [Soluções](../solucoes/03_cmd/19.md)
+
+20 - Qual o comando para listar todos os ficheiros com extensão `.mpN` na
+pasta actual, onde *N* é um digito de 0 a 9?
+
+> [Soluções](../solucoes/03_cmd/20.md)
+
+21 - Qual o comando para mover todos os ficheiros com nomes do tipo
+`amostraXXXX.dat`, onde *XXXX* é um número hexadecimal, para a pasta `Dados` na
+área de utilizador.
+
+> [Soluções](../solucoes/03_cmd/21.md)
+
+22 - Qual o comando para remover todos os ficheiros começados por `mapa` da
+pasta actual?
+
+> [Soluções](../solucoes/03_cmd/22.md)
+
+23 - Qual o comando para copiar todos os ficheiros com extensão `.jpg` da pasta `Pictures` na área de utilizador para uma _pen_ USB montada no caminho
+`/media/user/CRUISERDRIVE`?
+
+> [Soluções](../solucoes/03_cmd/23.md)

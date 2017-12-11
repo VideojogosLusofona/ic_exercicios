@@ -26,3 +26,27 @@ obteres/descarregares todas as alterações efectuadas no repositório remoto
 (incluindo novos ramos) para o teu repositório local?
 
 > [Soluções](../solucoes/10_git/04.md)
+
+5 - Qual o comando para ver as diferenças entre o penúltimo _commit_ e o
+antepenúltimo _commit_?
+
+> [Soluções](../solucoes/10_git/05.md)
+
+6 - Qual o comando para descartar todas as alterações efectuadas em ficheiros
+Markdown (extensão `.md`) ainda não adicionadas para _commit_ (isto é, ainda
+não adicionadas à _staging area_)?
+
+> [Soluções](../solucoes/10_git/06.md)
+
+7 - Apagaste o ramo `new-feature` do teu repositório local, ramo esse que
+estava também mapeado (com o mesmo nome) no repositório remoto `upstream`. Qual
+é o comando para apagar o ramo também no repositório remoto?
+
+> [Soluções](../solucoes/10_git/07.md)
+
+8 - Por engano adicionaste uma pasta de nome `bin`, bem como todos os seus
+conteúdos, para _commit_ (isto é, à _staging area_). No entanto, ainda não
+fizeste _commit_. Qual o comando para retirar essa pasta, bem como os seus
+conteúdos, da _staging area_?
+
+> [Soluções](../solucoes/10_git/08.md)
