@@ -153,7 +153,8 @@ O código associado aos exercícios é disponibilizado através da licença [GPL
   [Inês Gonçalves](https://github.com/ineesgoncalvees),
   [Gabriel Nunes](https://github.com/twinventur),
   [Inês Nunes](https://github.com/FiammaV),
-  [Nuno Carriço](https://github.com/NunoCarrico98)
+  [Nuno Carriço](https://github.com/NunoCarrico98),
+  [André Pedro](https://github.com/andre-pedro)
 * Curso: [Licenciatura em Aplicações Multimédia e Videojogos][lamv]
 * Instituição: [Universidade Lusófona de Humanidades e Tecnologias][ULHT]
 
